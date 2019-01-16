@@ -1,0 +1,24 @@
+
+#maphoto {
+  display: none;
+}
+#contacte {
+  display: none;
+}
+body { /* Modifications : la couleur de fond de page - la police -   */
+  background-color :red;
+  font-family :Serif;
+  font-size :15pt;
+  margin: 0px;
+}
+footer {
+  display:none;
+}
+#menu  {
+  display:none;
+ }
+ main {
+   display: flex;
+   flex-direction: column-reverse;
+   color: #000;
+ }
