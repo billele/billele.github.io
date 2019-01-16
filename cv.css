@@ -7,7 +7,7 @@ body /* reglage de la marget-du padding et de la police de la page   */
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  animation: appear ease-in-out 1s;
+  animation: appear ease-in-out 0.3s;
 }
 @@font-face {
   font-family: 'mukta'
@@ -40,7 +40,7 @@ main {
   margin-top: -12px;
 }
 #always {
-  width: 1000px;;
+  text-align: center;
   margin-left: auto;
   position: relative;
   height: 442px;
@@ -54,6 +54,7 @@ main {
 }
 .presentation {
   padding-top: 140px;
+  padding-bottom: 140px;
 
 }
 #contacte
@@ -62,6 +63,7 @@ main {
 }
 #competence {
   height: 442px;
+  margin-left: auto;
 }
 .hautun {
   text-shadow: 1px 1px;
@@ -75,11 +77,15 @@ main {
 }
 .hautdeux {
   height: 150px;
+  width: 150px;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .hautdeux > img { /* taille de ma photo */
-  
   height: 100%;
-  border-radius: 8px
+  position: absolute;
+  left: -40px;
 }
 header
 {
@@ -161,11 +167,12 @@ li a {
 #menu li:hover {
   transform: scale(1.2);
 }
+#competance > h1 {
+  margin-left: 50px;
 
+}
 .liun:hover {
   color: #cfbfbf;
-  font-weight: bold;
-  font-size: 12px;
   transition-property: color;
   transition-duration: 1s;
 }
@@ -207,10 +214,9 @@ margin-right: auto;
 display: block;
 } */
 .liste {
-  width: 70%;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+text-align: center;
+padding-top: 50px;
+padding-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   p
