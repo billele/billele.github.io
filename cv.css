@@ -1,29 +1,36 @@
+html {
+  height: 100%;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-MediumItalic.ttf")
+}
 body /* reglage de la marget-du padding et de la police de la page   */
 {
   margin: 0px;
   padding: 0px;
-  height: 100%;
   /* animation de l ecriture au chargement de la page -   */
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   animation: appear ease-in-out 0.3s;
-}
-@@font-face {
-  font-family: 'mukta'
-  src: url('mukta-Regular.ttf')
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
 }
 .leslogo > ul {
   display: flex;
 }
 p {
   font-size: larger;
-  color: white;
+  color: black;
   margin-left: 6px;
 }
 main {
   height: auto;
-  background-color: #16001e;
+  flex-grow: 1;
+
 }
 .toto {
   margin-left: 190px;
@@ -214,11 +221,10 @@ margin-right: auto;
 display: block;
 } */
 .liste {
-text-align: center;
-padding-top: 50px;
-padding-bottom: 50px;
+  text-align: center;
+  padding: 50px;
 }
-@media screen and (max-width: 767px) {
+@media all and (max-device-width: 480px) {
   p
   {
     display: block;
@@ -226,6 +232,12 @@ padding-bottom: 50px;
     text-align: justify;
     font-size: 0.6em;
 
+  }
+  br {
+    display: none;
+  }
+  header {
+    height: 170px;
   }
   .liste > img {
     height: 90px;
@@ -235,9 +247,11 @@ padding-bottom: 50px;
     width: auto;
     height: 370px;
   }
+  html {
+    height: 100%;
+  }
   body {
     background-size: auto;
-    height: 100%;
   }
   #menu {
     font-size: 11px;
@@ -256,6 +270,13 @@ padding-bottom: 50px;
   }
   .con {
     margin-right: auto;
+  }
+  .hautdeux {
+    height: 140px;
+    width: 140px;
+  }
+  .haut {
+    height: inherit;
   }
   /* iframe {
   width: auto;
@@ -293,8 +314,7 @@ padding-bottom: 50px;
     width: 60px;
   }
   footer {
-    margin-top: 50px;
-    height: 53px;
+    height: 8.5vh;
   }
   .container {
     display: none;
@@ -304,7 +324,6 @@ padding-bottom: 50px;
     width: 24px;
     height: 4px;
     background: blueviolet;
-    border: 11px green solid;
   }
 
 
@@ -312,6 +331,7 @@ padding-bottom: 50px;
     flex-direction: column;
     text-align: center;
     background-color: rgba(247, 247, 247, 0.6);
+    margin-bottom: 0px;
   }
 
 
@@ -356,10 +376,12 @@ padding-bottom: 50px;
     cursor: pointer;
   }
   main {
-    margin-top: 0px;
+    padding-top: 20px;
+    flex-grow: 1;
   }
   .leslogo {
     display: block;
+    height: inherit;
   }
   .leslogo > ul {
     display: flex;
@@ -372,6 +394,15 @@ padding-bottom: 50px;
     margin-top: 0px;
   }
   #linkicone {
-    margin-top: -50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-bottom: 11px:
+  }
+  #formation > ul {
+    padding-left: 0px;
+  }
+  #experience > ul {
+    padding-left: 0px;
   }
 }
