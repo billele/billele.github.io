@@ -62,7 +62,7 @@ main {
 .presentation {
   padding-top: 140px;
   padding-bottom: 140px;
-
+  padding-right: 8px;
 }
 #contacte
 {
@@ -74,6 +74,7 @@ main {
 }
 .hautun {
   text-shadow: 1px 1px;
+  padding-left: 13px;
 }
 .haut{/* mode flex pour placer la photo  */
   display: flex;
@@ -325,21 +326,16 @@ display: block;
     height: 4px;
     background: blueviolet;
   }
-
-
   #menu_nav ul {
     flex-direction: column;
     text-align: center;
     background-color: rgba(247, 247, 247, 0.6);
     margin-bottom: 0px;
   }
-
-
   #menu_nav ul li:hover ul {
     display: block;
     background-color: rgba(247, 247, 247, 0.6);
     text-align: center;
-
   }
   #menu_nav i::before, #menu_nav i::after {
     content: "";
@@ -349,7 +345,7 @@ display: block;
     position: absolute;
     width: 24px;
     height: 4px;
-    background: blueviolet;
+    background: black;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -405,4 +401,28 @@ display: block;
   #experience > ul {
     padding-left: 0px;
   }
+  #labelTest {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #hamburgerMenu {
+    margin-top: 14px;
+    right: 14px;
+  }
+  #experience > ul > li {
+    margin-top: 0px;
+}
+#formation > ul > li {
+    margin-top: 0px;
+}
+p {
+  text-align: inherit;
+  font-size: 0.7em;
+}
+#competence {
+  height: inherit;
+}
+.liste {
+  padding: 50px 50px 0px;
+}
 }
